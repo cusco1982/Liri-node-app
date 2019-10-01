@@ -12,7 +12,7 @@ var spotify = new Spotify(keys.spotify);
 // ----------------------------------------------------
 
 function writeToLog(data) {
-    fs.appendFile("random.txt", '\r\n\r\n', function (err) {
+    fs.appendFile("random.txt", '\r\n', function (err) {
         if (err) {
             return console.log(err);
         }
@@ -38,12 +38,11 @@ function writeToLog(data) {
 //     });
 // }
 function writeToMovie(data) {
-    fs.appendFile("movies.txt", '\r\n\r\n', function (err) {
+    fs.appendFile("movies.txt", '\r\n', function (err) {
         if (err) {
             return console.log(err);
         }
     });
-
     fs.appendFile("movies.txt", (data), function (err) {
         if (err) {
             return console.log(err);
@@ -51,12 +50,11 @@ function writeToMovie(data) {
     });
 }
 function writeToSpotify(data) {
-    fs.appendFile("spotify.txt", '\r\n\r\n', function (err) {
+    fs.appendFile("spotify.txt", '\r\n', function (err) {
         if (err) {
             return console.log(err);
         }
     });
-
     fs.appendFile("spotify.txt", (data), function (err) {
         if (err) {
             return console.log(err);
@@ -102,7 +100,7 @@ switch (cmd) {
         doWhatItSays();
         break;
     default:
-        console.log(" line 51 ")
+        console.log(" line 105 ")
 }
 
 
@@ -173,7 +171,7 @@ function spotifyThisSong(search) {
             console.log(output);
             writeToLog(output);
             writeToSpotify(data.tracks.items[0].name);
-            console.log(data.tracks.items[0].name);
+            // console.log(data.tracks.items[0].name);
         }
     });
 };
@@ -240,7 +238,7 @@ function movieThis(search) {
             console.log(output);
             writeToLog(output);
             writeToMovie(jsonData.Title);
-            console.log(jsonData.Title);
+            // console.log(jsonData.Title);
 
         }
     });
