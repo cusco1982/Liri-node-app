@@ -1,20 +1,4 @@
 
-
-
-Artist Name: Richy K
-Song Name: Californiacation
-URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
-Album Name: Californiacation
-
-
-
-Artist Name: Shakira
-Song Name: Hips Don't Lie
-URL: https://open.spotify.com/album/5ppnlEoj4HdRRdRihnY3jU
-Album Name: Oral Fixation, Vol. 2 (Expanded Edition)
-
-
-
 Title: The Matrix
 Release Year: 1999
 IMDB Rating: 8.7
@@ -23,6 +7,8 @@ Country: USA
 Language: English
 Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
 Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+
+
 
 
 
@@ -44,22 +30,127 @@ Album Name: Californiacation
 
 
 
-Title: The Matrix
-Release Year: 1999
-IMDB Rating: 8.7
-Rotten Tomatoes Rating: 88%
+Artist Name: Shakira
+Song Name: Hips Don't Lie
+URL: https://open.spotify.com/album/5ppnlEoj4HdRRdRihnY3jU
+Album Name: Oral Fixation, Vol. 2 (Expanded Edition)
+
+
+
+Artist Name: Richy K
+Song Name: Californiacation
+URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
+Album Name: Californiacation
+
+
+
+Artist Name: Richy K
+Song Name: Californiacation
+URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
+Album Name: Californiacation
+
+
+
+Artist Name: Richy K
+Song Name: Californiacation
+URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
+Album Name: Californiacation
+
+
+
+Artist Name: Richy K
+Song Name: Californiacation
+URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
+Album Name: Californiacation
+
+Artist Name: Shakira
+Song Name: Hips Don't Lie
+URL: https://open.spotify.com/album/5ppnlEoj4HdRRdRihnY3jU
+Album Name: Oral Fixation, Vol. 2 (Expanded Edition)
+
+
+
+
+
+Artist Name: Shakira
+Song Name: Hips Don't Lie
+URL: https://open.spotify.com/album/5ppnlEoj4HdRRdRihnY3jU
+Album Name: Oral Fixation, Vol. 2 (Expanded Edition)
+
+
+
+Artist Name: Shakira
+Song Name: Hips Don't Lie
+URL: https://open.spotify.com/album/5ppnlEoj4HdRRdRihnY3jU
+Album Name: Oral Fixation, Vol. 2 (Expanded Edition)
+
+
+
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+
+
+
+
+Artist Name: Richy K
+Song Name: Californiacation
+URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
+Album Name: Californiacation
+
+
+
+Artist Name: Richy K
+Song Name: Californiacation
+URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
+Album Name: Californiacation
+
+
+
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+
+
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+
+
+Artist Name: Richy K
+Song Name: Californiacation
+URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
+Album Name: Californiacation
+
+
+
+Title: Titanic
+Release Year: 1997
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 89%
 Country: USA
-Language: English
-Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
-Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Language: English, Swedish, Italian
+Plot: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
 
 
 
-Title: Monsters
-Release Year: 2010
-IMDB Rating: 6.4
-Rotten Tomatoes Rating: 73%
-Country: UK, Mexico, Guatemala
-Language: English, Spanish
-Plot: Six years after Earth has suffered an alien invasion, a cynical journalist agrees to escort a shaken American tourist through an infected zone in Mexico to the safety of the U.S. border.
-Actors: Scoot McNairy, Whitney Able, Mario Zuniga Benavides, Annalee Jefferies
+Title: Lion
+Release Year: 2016
+IMDB Rating: 8.0
+Rotten Tomatoes Rating: 85%
+Country: UK, Australia, USA
+Language: English, Hindi, Bengali
+Plot: A five-year-old Indian boy gets lost on the streets of Calcutta, thousands of kilometers from home. He survives many challenges before being adopted by a couple in Australia. 25 years later, he sets out to find his lost family.
+Actors: Sunny Pawar, Abhishek Bharate, Priyanka Bose, Khushi Solanki

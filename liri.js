@@ -9,7 +9,7 @@ let request = require('request');
 
 var spotify = new Spotify(keys.spotify);
 
-// ---------------------------writetolog random.txt
+// ----------------------------------------------------
 
 function writeToLog(data) {
     fs.appendFile("random.txt", '\r\n\r\n', function (err) {
@@ -22,11 +22,50 @@ function writeToLog(data) {
         if (err) {
             return console.log(err);
         }
-        console.log(space + "random.txt was updated!");
     });
 }
+// function writeToArtist(data) {
+//     fs.appendFile("artist.txt", '\r\n\r\n', function (err) {
+//         if (err) {
+//             return console.log(err);
+//         }
+//     });
 
-// ---------------------------
+//     fs.appendFile("artist.txt", (data), function (err) {
+//         if (err) {
+//             return console.log(err);
+//         }
+//     });
+// }
+function writeToMovie(data) {
+    fs.appendFile("movies.txt", '\r\n\r\n', function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
+
+    fs.appendFile("movies.txt", (data), function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
+}
+function writeToSpotify(data) {
+    fs.appendFile("spotify.txt", '\r\n\r\n', function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
+
+    fs.appendFile("spotify.txt", (data), function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
+}
+// -----------------------------------------------------
+
+
 
 
 var cmd = process.argv[2];
@@ -133,7 +172,8 @@ function spotifyThisSong(search) {
                 space + "Album Name: " + data.tracks.items[0].album.name + space;
             console.log(output);
             writeToLog(output);
-            // writeToLog(data.tracks.items[0].name);   <----needs to redirect to spotify.txt
+            writeToSpotify(data.tracks.items[0].name);
+            console.log(data.tracks.items[0].name);
         }
     });
 };
@@ -199,7 +239,8 @@ function movieThis(search) {
 
             console.log(output);
             writeToLog(output);
-            // writeToLog(jsonData.Title);   <----needs to redirect to movies.txt
+            writeToMovie(jsonData.Title);
+            console.log(jsonData.Title);
 
         }
     });
