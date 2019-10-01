@@ -279,18 +279,24 @@ function doWhatItSays() {
                     if (error) {
                     return console.log(error);
                     }
-            });
-            
-            
+                    });
+
         case 1:
-            whatdo = "The Matrix"
+            fs.readFile("movies.txt", "utf8", function (error, data) {
+            whatdo = data;
             movieThis(whatdo);
-            break;
+                if (error) {
+                return console.log(error);
+                }
+                });
         case 2:
-            whatdo = "Cast Away"
-            movieThis(whatdo);
-            break;
-    };
+            fs.readFile("artist.txt", "utf8", function (error, data) {
+            whatdo = data;
+            concertThis(whatdo);
+                if (error) {
+                return console.log(error);
+                }
+                });
 
 };           
 
@@ -301,3 +307,4 @@ function doWhatItSays() {
 
 // Edit the text in random.txt to test out the feature for movie-this and concert-this.
 
+}
