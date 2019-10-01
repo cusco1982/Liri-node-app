@@ -12,13 +12,13 @@ var spotify = new Spotify(keys.spotify);
 // ---------------------------writetolog random.txt
 
 function writeToLog(data) {
-    fs.appendFile("random.txt", '\r\n\r\n', function(err) {
+    fs.appendFile("random.txt", '\r\n\r\n', function (err) {
         if (err) {
             return console.log(err);
         }
     });
 
-    fs.appendFile("random.txt", (data), function(err) {
+    fs.appendFile("random.txt", (data), function (err) {
         if (err) {
             return console.log(err);
         }
@@ -35,8 +35,6 @@ var argThree = process.argv[4];
 var argFour = process.argv[5];
 
 let space = "\n"
-let header = "Sure. I'll share what I found: "
-
 
 // ---------------------------
 search = input;
@@ -77,7 +75,7 @@ switch (cmd) {
 function concertThis(search) {
 
     if (!search) {
-        search = "Drake";
+        search = "Shakira";
     }
 
     axios.get("https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp")
@@ -128,11 +126,10 @@ function spotifyThisSong(search) {
             return;
         } else {
             output =
-                "Ch-ch-check out this info: " +
-                space + "Song Name: " + "'" + data.tracks.items[0].name + "'" +
-                space + "Album Name: " + data.tracks.items[0].album.name +
                 space + "Artist Name: " + data.tracks.items[0].album.artists[0].name +
-                space + "URL: " + data.tracks.items[0].album.external_urls.spotify;
+                space + "Song Name: " + data.tracks.items[0].name +
+                space + "URL: " + data.tracks.items[0].album.external_urls.spotify +
+                space + "Album Name: " + data.tracks.items[0].album.name + space;
             console.log(output);
             writeToLog(output);
         }
@@ -144,6 +141,7 @@ function spotifyThisSong(search) {
 // > SPOTIFY_SECRET  
 // If no song is provided then your program will default to "The Sign" by Ace of Base.
 // renders back in console
+
 // Artist(s)
 // - The song's name
 // - A preview link of the song from Spotify
@@ -169,7 +167,7 @@ function movieThis(search) {
     if (!search) {
         search = "The Matrix"
     }
-    
+
     let URL = "http://www.omdbapi.com/?t=" + search + "&y=&plot=short&apikey=" + "879a15d0";
 
     request(URL, function (err, res, body) {
@@ -178,7 +176,7 @@ function movieThis(search) {
             return;
         } else {
             let jsonData = JSON.parse(body);
-            output = 
+            output =
                 space + 'Title: ' + jsonData.Title +
                 space + 'Release Year: ' + jsonData.Year +
                 space + 'IMDB Rating: ' + jsonData.imdbRating +
@@ -187,7 +185,7 @@ function movieThis(search) {
                 space + 'Language: ' + jsonData.Language +
                 space + 'Plot: ' + jsonData.Plot +
                 space + 'Actors: ' + jsonData.Actors + space;
-            
+
             // Output in console
             //   * Title of the movie.
             //   * Year the movie came out.
@@ -197,12 +195,12 @@ function movieThis(search) {
             //   * Language of the movie.
             //   * Plot of the movie.
             //   * Actors in the movie.
-            
+
             console.log(output);
             writeToLog(output);
         }
     });
-    
+
 };
 // movie - this
 // axios OMDB API      API key.You may use trilogy
@@ -267,44 +265,56 @@ function movieThis(search) {
 //   node liri.js do-what-it-says
 // ----------------------------------------------------------- ** kinda works
 function doWhatItSays() {
-    whatdo = ""
+    // whatdo = ""
+
+
+    // function getRandom() {
+    //     return Math.random();
+    //   }
+
+    //   Math.floor(Math.random() * 6)
+
 
     //  `node liri.js do-what-it-says`
     rando = Math.floor(Math.random() * 3);
+    console.log("randomly generated number : ", rando);
     switch (rando) {
-        case 0:
+        case 0:     //i want it that way
             fs.readFile("spotify.txt", "utf8", function (error, data) {
-                whatdo = data;
-                spotifyThisSong(whatdo);
-                    if (error) {
+                randomsong = data;
+                console.log("spotify text : ", randomsong)
+                spotifyThisSong(randomsong);
+                if (error) {
                     return console.log(error);
-                    }
-                    });
+                }
+            });
 
-        case 1:
+        case 1:     //titanic
             fs.readFile("movies.txt", "utf8", function (error, data) {
-            whatdo = data;
-            movieThis(whatdo);
+                randommovie = data;
+                console.log("movie text : ", randommovie);
+                movieThis(randommovie);
                 if (error) {
-                return console.log(error);
+                    return console.log(error);
                 }
-                });
-        case 2:
+            });
+        case 2:     //aladdin
             fs.readFile("artist.txt", "utf8", function (error, data) {
-            whatdo = data;
-            concertThis(whatdo);
+                randomartist = data;
+                console.log("artist name : ", randomartist);
+                movieThis(randomartist);
                 if (error) {
-                return console.log(error);
+                    return console.log(error);
                 }
-                });
+            });
 
-};           
+    };
 
 
-// Using the fs Node package LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
+    // Using the fs Node package LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
-// It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
+    // It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
 
-// Edit the text in random.txt to test out the feature for movie-this and concert-this.
+    // Edit the text in random.txt to test out the feature for movie-this and concert-this.
 
 }
