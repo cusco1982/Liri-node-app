@@ -9,53 +9,34 @@ let request = require('request');
 
 var spotify = new Spotify(keys.spotify);
 
-// ----------------------------------------------------
+// ----------------------------------------------------writeToLog functions
 
 function writeToLog(data) {
-    fs.appendFile("random.txt", '\r\n', function (err) {
-        if (err) {
-            return console.log(err);
-        }
-    });
-
-    fs.appendFile("random.txt", (data), function (err) {
+    fs.appendFile("random.txt",data, function (err) {
         if (err) {
             return console.log(err);
         }
     });
 }
-// function writeToArtist(data) {
-//     fs.appendFile("artist.txt", '\r\n\r\n', function (err) {
-//         if (err) {
-//             return console.log(err);
-//         }
-//     });
 
-//     fs.appendFile("artist.txt", (data), function (err) {
+// function writeToArtist(data) {
+//     fs.appendFile("artist.txt", "\n" + data, function (err) {
 //         if (err) {
 //             return console.log(err);
 //         }
 //     });
 // }
+
 function writeToMovie(data) {
-    fs.appendFile("movies.txt", '\r\n', function (err) {
-        if (err) {
-            return console.log(err);
-        }
-    });
-    fs.appendFile("movies.txt", (data), function (err) {
+    fs.appendFile("movies.txt", "\n" + data, function (err) {
         if (err) {
             return console.log(err);
         }
     });
 }
+
 function writeToSpotify(data) {
-    fs.appendFile("spotify.txt", '\r\n', function (err) {
-        if (err) {
-            return console.log(err);
-        }
-    });
-    fs.appendFile("spotify.txt", (data), function (err) {
+    fs.appendFile("spotify.txt", "\n" + data, function (err) {
         if (err) {
             return console.log(err);
         }
@@ -164,10 +145,10 @@ function spotifyThisSong(search) {
             return;
         } else {
             output =
-                space + "Artist Name: " + data.tracks.items[0].album.artists[0].name +
+                "Artist Name: " + data.tracks.items[0].album.artists[0].name +
                 space + "Song Name: " + data.tracks.items[0].name +
                 space + "URL: " + data.tracks.items[0].album.external_urls.spotify +
-                space + "Album Name: " + data.tracks.items[0].album.name + space;
+                space + "Album Name: " + data.tracks.items[0].album.name + space + space;
             console.log(output);
             writeToLog(output);
             writeToSpotify(data.tracks.items[0].name);
@@ -216,14 +197,14 @@ function movieThis(search) {
         } else {
             let jsonData = JSON.parse(body);
             output =
-                space + 'Title: ' + jsonData.Title +
+                'Title: ' + jsonData.Title +
                 space + 'Release Year: ' + jsonData.Year +
                 space + 'IMDB Rating: ' + jsonData.imdbRating +
                 space + 'Rotten Tomatoes Rating: ' + jsonData.Ratings[1].Value +
                 space + 'Country: ' + jsonData.Country +
                 space + 'Language: ' + jsonData.Language +
                 space + 'Plot: ' + jsonData.Plot +
-                space + 'Actors: ' + jsonData.Actors + space;
+                space + 'Actors: ' + jsonData.Actors + space + space;
 
             // Output in console
             //   * Title of the movie.
