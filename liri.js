@@ -92,6 +92,7 @@ function concertThis(search) {
 
             console.log(output);
             writeToLog(output);
+            // writeToLog(); <----insert response.data for artist name
         })
         .catch(function (error) {
             console.log("---------------------------")
@@ -132,6 +133,7 @@ function spotifyThisSong(search) {
                 space + "Album Name: " + data.tracks.items[0].album.name + space;
             console.log(output);
             writeToLog(output);
+            // writeToLog(data.tracks.items[0].name);   <----needs to redirect to spotify.txt
         }
     });
 };
@@ -158,7 +160,6 @@ function spotifyThisSong(search) {
 
 
 
-
 // node liri.js movie-this '<movie name here>'
 // ------------------------------------------------------------ ** works
 
@@ -168,7 +169,7 @@ function movieThis(search) {
         search = "The Matrix"
     }
 
-    let URL = "http://www.omdbapi.com/?t=" + search + "&y=&plot=short&apikey=" + "879a15d0";
+    let URL = "http://www.omdbapi.com/?t=" + search + "&y=&plot=short&apikey=" + "trilogy";
 
     request(URL, function (err, res, body) {
         if (err) {
@@ -198,6 +199,8 @@ function movieThis(search) {
 
             console.log(output);
             writeToLog(output);
+            // writeToLog(jsonData.Title);   <----needs to redirect to movies.txt
+
         }
     });
 
@@ -265,7 +268,9 @@ function movieThis(search) {
 //   node liri.js do-what-it-says
 // ----------------------------------------------------------- ** kinda works
 function doWhatItSays() {
-    // whatdo = ""
+    // randomsong = ""
+    // randommovie = ""
+    // randomartist = ""
 
 
     // function getRandom() {
@@ -298,11 +303,11 @@ function doWhatItSays() {
                     return console.log(error);
                 }
             });
-        case 2:     //aladdin
+        case 2:     //Drake
             fs.readFile("artist.txt", "utf8", function (error, data) {
                 randomartist = data;
                 console.log("artist name : ", randomartist);
-                movieThis(randomartist);
+                concertThis(randomartist);
                 if (error) {
                     return console.log(error);
                 }
