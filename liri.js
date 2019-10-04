@@ -93,23 +93,31 @@ switch (cmd) {
 function concertThis(search) {
 
     if (!search) {
-        search = "Shakira";
+        search = "Maluma";
     }
 
-    axios.get("https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp")
-        .then(function (response) {
-            console.log("response: ", response)
+    // axios.get("https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp")
+    //     .then(function (response) {
+    //         console.log("response: ", response.data);
+            // var showDate = moment(response.data[0].datetime).format('MM/DD/YYYY');
+            // output = space + header +
+            //     space + 'Artist: ' + search +
+            //     space + 'Venue: ' + response.data[0].venue.name +
+            //     space + 'Date: ' + showDate +
+            //     // space + 'Date: ' + response.data[0].formatted_datetime +
+            //     space + 'Location: ' + response.data[0].venue.city + " " + response.data[0].venue.region + " " + response.data[0].venue.country;
+            // console.log(output);
+            axios.get( "https://rest.bandsintown.com/artists/" + search + "?app_id=codingbootcamp")
+            // $.ajax({
+            //   url: queryURL,
+            //   method: "GET"
+            .then(function(response) {
+        
+              // Printing the entire object to console
+              console.log(response);
 
-            var showDate = moment(response.data[0].datetime).format('MM/DD/YYYY');
-            output = space + header +
-                space + 'Artist: ' + search +
-                space + 'Venue: ' + response.data[0].venue.name +
-                space + 'Date: ' + showDate +
-                // space + 'Date: ' + response.data[0].formatted_datetime +
-                space + 'Location: ' + response.data[0].venue.city + " " + response.data[0].venue.region + " " + response.data[0].venue.country;
 
-            console.log(output);
-            writeToLog(output);
+            // writeToLog(output);
             // writeToLog(); <----insert response.data for artist name
         })
         .catch(function (error) {
