@@ -1,11 +1,32 @@
-Title: Titanic
-Release Year: 1997
-IMDB Rating: 7.8
-Rotten Tomatoes Rating: 89%
-Country: USA
-Language: English, Swedish, Italian
-Plot: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
-Actors: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+Artist Name: The Beatles
+Song Name: Yesterday - Remastered 2009
+URL: https://open.spotify.com/album/0PT5m6hwPRrpBwIHVnvbFX
+Album Name: Help! (Remastered)
+
+Artist Name: The Beatles
+Song Name: Yesterday - Remastered 2009
+URL: https://open.spotify.com/album/0PT5m6hwPRrpBwIHVnvbFX
+Album Name: Help! (Remastered)
+
+Artist Name: The Beatles
+Song Name: Yesterday - Remastered 2009
+URL: https://open.spotify.com/album/0PT5m6hwPRrpBwIHVnvbFX
+Album Name: Help! (Remastered)
+
+Artist Name: Richy K
+Song Name: Californiacation
+URL: https://open.spotify.com/album/4mtK3TbDZGcv3aZCqriXwa
+Album Name: Californiacation
 
 Title: The Matrix
 Release Year: 1999
@@ -15,4 +36,102 @@ Country: USA
 Language: English
 Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
 Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+
+Artist Name: The Beatles
+Song Name: Yesterday - Remastered 2009
+URL: https://open.spotify.com/album/0PT5m6hwPRrpBwIHVnvbFX
+Album Name: Help! (Remastered)
+
+Artist Name: Adele
+Song Name: Hello
+URL: https://open.spotify.com/album/0K4pIOOsfJ9lK8OjrZfXzd
+Album Name: 25
+
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+Artist Name: The Beatles
+Song Name: Yesterday - Remastered 2009
+URL: https://open.spotify.com/album/0PT5m6hwPRrpBwIHVnvbFX
+Album Name: Help! (Remastered)
+
+Title: Dr. T & the Women
+Release Year: 2000
+IMDB Rating: 4.6
+Rotten Tomatoes Rating: 56%
+Country: USA, Germany
+Language: English, German, Spanish
+Plot: A wealthy gynecologist's ideal life is thrown into turmoil when the women closest to him begin to affect his life in unexpecting ways.
+Actors: Richard Gere, Helen Hunt, Farrah Fawcett, Laura Dern
+
+Title: O
+Release Year: 2001
+IMDB Rating: 6.1
+Rotten Tomatoes Rating: 64%
+Country: USA
+Language: English
+Plot: An update of Shakespeare's 'Othello' with a young cast, set in an upper class prep school, & centered around basketball player Odin.
+Actors: Mekhi Phifer, Martin Sheen, Josh Hartnett, Andrew Keegan
+
+Title: Dr. T & the Women
+Release Year: 2000
+IMDB Rating: 4.6
+Rotten Tomatoes Rating: 56%
+Country: USA, Germany
+Language: English, German, Spanish
+Plot: A wealthy gynecologist's ideal life is thrown into turmoil when the women closest to him begin to affect his life in unexpecting ways.
+Actors: Richard Gere, Helen Hunt, Farrah Fawcett, Laura Dern
+
+Title: O
+Release Year: 2001
+IMDB Rating: 6.1
+Rotten Tomatoes Rating: 64%
+Country: USA
+Language: English
+Plot: An update of Shakespeare's 'Othello' with a young cast, set in an upper class prep school, & centered around basketball player Odin.
+Actors: Mekhi Phifer, Martin Sheen, Josh Hartnett, Andrew Keegan
+
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+URL: https://open.spotify.com/album/1NslKOZobWxINFaFkLol3r
+Album Name: The Hits--Chapter One
+
+Artist Name: The Beatles
+Song Name: Yesterday - Remastered 2009
+URL: https://open.spotify.com/album/0PT5m6hwPRrpBwIHVnvbFX
+Album Name: Help! (Remastered)
+
+Title: Dr. T & the Women
+Release Year: 2000
+IMDB Rating: 4.6
+Rotten Tomatoes Rating: 56%
+Country: USA, Germany
+Language: English, German, Spanish
+Plot: A wealthy gynecologist's ideal life is thrown into turmoil when the women closest to him begin to affect his life in unexpecting ways.
+Actors: Richard Gere, Helen Hunt, Farrah Fawcett, Laura Dern
+
+Title: O
+Release Year: 2001
+IMDB Rating: 6.1
+Rotten Tomatoes Rating: 64%
+Country: USA
+Language: English
+Plot: An update of Shakespeare's 'Othello' with a young cast, set in an upper class prep school, & centered around basketball player Odin.
+Actors: Mekhi Phifer, Martin Sheen, Josh Hartnett, Andrew Keegan
+
+Title: O
+Release Year: 2001
+IMDB Rating: 6.1
+Rotten Tomatoes Rating: 64%
+Country: USA
+Language: English
+Plot: An update of Shakespeare's 'Othello' with a young cast, set in an upper class prep school, & centered around basketball player Odin.
+Actors: Mekhi Phifer, Martin Sheen, Josh Hartnett, Andrew Keegan
 

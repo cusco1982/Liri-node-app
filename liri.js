@@ -19,16 +19,16 @@ function writeToLog(data) {
     });
 }
 
-// function writeToArtist(data) {
-//     fs.appendFile("artist.txt", "\n" + data, function (err) {
-//         if (err) {
-//             return console.log(err);
-//         }
-//     });
-// }
+function writeToArtist(data) {
+    fs.appendFile("artist.txt", "," + data, function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
+}
 
 function writeToMovie(data) {
-    fs.appendFile("movies.txt", "\n" + data, function (err) {
+    fs.appendFile("movies.txt", "," + data, function (err) {
         if (err) {
             return console.log(err);
         }
@@ -36,7 +36,7 @@ function writeToMovie(data) {
 }
 
 function writeToSpotify(data) {
-    fs.appendFile("spotify.txt", "\n" + data, function (err) {
+    fs.appendFile("spotify.txt", "," + data, function (err) {
         if (err) {
             return console.log(err);
         }
@@ -96,6 +96,32 @@ function concertThis(search) {
         search = "Maluma";
     }
 
+
+
+
+
+    // search = search.split(" ").join("+");
+    var queryUrl = "https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp#";
+    // console.log(queryUrl)
+    request(queryUrl, function (error, response, body) {
+        if (!error && response.statusCode === 200) {
+            var concert = JSON.parse(body);
+            // console.log(concert);
+            var concertDate = concert[0].datetime;
+            // console.log(concertDate);
+            var momentDate = moment().format("L");
+            // console.log(momentDate)
+            let output = "\nVenue: " + concert[0].venue.name + "\nLocation: " + concert[0].venue.city + ", " + concert[0].venue.region + "\nDate : " + momentDate;
+            console.log(output);
+            writeToArtist(search);
+        };
+    });
+};
+
+
+
+
+
     // axios.get("https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp")
     //     .then(function (response) {
     //         console.log("response: ", response.data);
@@ -107,24 +133,24 @@ function concertThis(search) {
             //     // space + 'Date: ' + response.data[0].formatted_datetime +
             //     space + 'Location: ' + response.data[0].venue.city + " " + response.data[0].venue.region + " " + response.data[0].venue.country;
             // console.log(output);
-            axios.get( "https://rest.bandsintown.com/artists/" + search + "?app_id=codingbootcamp")
+            // axios.get( "https://rest.bandsintown.com/artists/" + search + "?app_id=codingbootcamp")
             // $.ajax({
             //   url: queryURL,
             //   method: "GET"
-            .then(function(response) {
+            // .then(function(response) {
         
               // Printing the entire object to console
-              console.log(response);
+            //   console.log(response);
 
 
             // writeToLog(output);
             // writeToLog(); <----insert response.data for artist name
-        })
-        .catch(function (error) {
-            console.log("---------------------------")
-            console.log("err : ", error);
-        });
-};
+//         })
+//         .catch(function (error) {
+//             console.log("---------------------------")
+//             console.log("err : ", error);
+//         });
+// };
 // events api search
 // ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
 
@@ -310,36 +336,52 @@ function doWhatItSays() {
 
     //  `node liri.js do-what-it-says`
     rando = Math.floor(Math.random() * 3);
+    // rando = 0
     console.log("randomly generated number : ", rando);
     switch (rando) {
         case 0:     //i want it that way
             fs.readFile("spotify.txt", "utf8", function (error, data) {
                 randomsong = data;
-                console.log("spotify text : ", randomsong)
+                randomsong = randomsong.split(",")
+                // console.log("spotify text : ", randomsong)
+                console.log("----------------------")
+                randomsong = randomsong[Math.floor(Math.random() * randomsong.length)]
+                console.log(randomsong)
                 spotifyThisSong(randomsong);
                 if (error) {
                     return console.log(error);
                 }
             });
+            break;
 
         case 1:     //titanic
             fs.readFile("movies.txt", "utf8", function (error, data) {
                 randommovie = data;
+                randommovie = randommovie.split(",")
+                console.log("----------------------")
+                randommovie = randommovie[Math.floor(Math.random() * randommovie.length)]
                 console.log("movie text : ", randommovie);
                 movieThis(randommovie);
                 if (error) {
                     return console.log(error);
                 }
             });
-        case 2:     //Drake
+            break;
+
+        case 2:     //Maluma
             fs.readFile("artist.txt", "utf8", function (error, data) {
                 randomartist = data;
+                randomartist = randomartist.split(",")
+                console.log("----------------------")
+                randomartist = randomartist[Math.floor(Math.random() * randomartist.length)]
                 console.log("artist name : ", randomartist);
                 concertThis(randomartist);
                 if (error) {
                     return console.log(error);
                 }
             });
+            break;
+
 
     };
 
